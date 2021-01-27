@@ -9,11 +9,11 @@ def file_name(file_dir):
     for name in files:
         head = name[:-7]
         tail = name[-7:]
-        new_tail = ' T2_merge' # 在这里分别改成  FLAIR_merge T2_merge ！前面的空格不要删
+        new_tail = '' # 需要添加的名称
         new_name = head + new_tail
         os.rename(name, new_name+tail)
 
 
-file_name('D:\\MERGE_T2') # 这里写你的文件路径 每个斜线再加一条斜线
+file_name('D:\\MERGE_T2') # 文件路径
 
 
